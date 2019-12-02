@@ -10,9 +10,6 @@ class Pixel
 {
 public:
 	
-	//if you use this, you are not allowed to keep this as is!
-	//instead, I expect you to write proper getters and setters and
-	//make the actual variables private!
 	int red = -1;
 	int green = -1;
 	int blue = -1;

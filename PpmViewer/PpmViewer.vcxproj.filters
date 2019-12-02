@@ -488,6 +488,24 @@
     <ClInclude Include="RemoveRedEffect.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RemoveGreenEffect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoveBlueEffect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NegateRedEffect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NegateGreenEffect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NegateBlueEffect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GrayscaleEffect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="bunny.ppm">
