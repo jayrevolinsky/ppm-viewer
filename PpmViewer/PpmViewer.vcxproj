@@ -286,6 +286,7 @@
     <ClInclude Include="NegateBlueEffect.hpp" />
     <ClInclude Include="NegateGreenEffect.hpp" />
     <ClInclude Include="NegateRedEffect.hpp" />
+    <ClInclude Include="NoiseEffect.hpp" />
     <ClInclude Include="Pixel.hpp" />
     <ClInclude Include="PpmDocument.hpp" />
     <ClInclude Include="PpmWindow.hpp" />
