@@ -132,9 +132,12 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="90Degree.hpp" />
+    <ClInclude Include="Blur.hpp" />
     <ClInclude Include="EffectFactory.hpp" />
     <ClInclude Include="FileBrowser.hpp" />
     <ClInclude Include="FileHelpers.hpp" />
+    <ClInclude Include="FlipVerticalEffect.hpp" />
     <ClInclude Include="FltkIncludes.h" />
     <ClInclude Include="FL\abi-version.h" />
     <ClInclude Include="FL\dirent.h" />
@@ -282,12 +285,15 @@
     <ClInclude Include="FL\win32.H" />
     <ClInclude Include="FL\x.H" />
     <ClInclude Include="GrayscaleEffect.hpp" />
+    <ClInclude Include="HighContrastEffect.hpp" />
+    <ClInclude Include="FlipHorizontalEffect.hpp" />
     <ClInclude Include="ImageEffect.hpp" />
     <ClInclude Include="NegateBlueEffect.hpp" />
     <ClInclude Include="NegateGreenEffect.hpp" />
     <ClInclude Include="NegateRedEffect.hpp" />
     <ClInclude Include="NoiseEffect.hpp" />
     <ClInclude Include="Pixel.hpp" />
+    <ClInclude Include="PixelateEffect.hpp" />
     <ClInclude Include="PpmDocument.hpp" />
     <ClInclude Include="PpmWindow.hpp" />
     <ClInclude Include="RemoveBlueEffect.hpp" />

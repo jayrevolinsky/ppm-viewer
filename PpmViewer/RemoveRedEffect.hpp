@@ -1,6 +1,7 @@
 #pragma once
 #include "PpmDocument.hpp"
 #include "ImageEffect.hpp"
+
 class RemoveRedEffect : public ImageEffect
 {
 public:
@@ -13,7 +14,6 @@ public:
 				Pixel& p = doc[i][j];
 				p.red = 0;
 
-				//not necessary as we're using references but it makes our intent more clear
 				doc[i][j] = p;
 			}
 		}

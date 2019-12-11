@@ -7,6 +7,12 @@
 #include "NegateBlueEffect.hpp"
 #include "GrayscaleEffect.hpp"
 #include "NoiseEffect.hpp"
+#include "HighContrastEffect.hpp"
+#include "FlipHorizontalEffect.hpp"
+#include "FlipVerticalEffect.hpp"
+#include "Blur.hpp"
+#include "PixelateEffect.hpp"
+#include "90Degree.hpp"
 
 enum class ImageEffectType
 {
@@ -17,7 +23,13 @@ enum class ImageEffectType
 	NegateGreen,
 	NegateBlue,
 	Grayscale,
-	Noise
+	Noise,
+	HighContrast,
+	FlipHorizontal,
+	FlipVertical,
+	Blur,
+	Pixelate,
+	Rotate
 	//TODO: add rest below
 };
 
@@ -58,6 +70,30 @@ public:
 
 		case ImageEffectType::Noise:
 			return new NoiseEffect{};
+			break;
+
+		case ImageEffectType::HighContrast:
+			return new HighContrastEffect{};
+			break;
+
+		case ImageEffectType::FlipHorizontal:
+			return new FlipHorizontalEffect{};
+			break;
+
+		case ImageEffectType::FlipVertical:
+			return new FlipVerticalEffect{};
+			break;
+
+		case ImageEffectType::Blur:
+			return new BlurEffect{};
+			break;
+
+		case ImageEffectType::Pixelate:
+			return new PixelateEffect{};
+			break;
+
+		case ImageEffectType::Rotate:
+			return new RotateEffect{};
 			break;
 
 		default: 

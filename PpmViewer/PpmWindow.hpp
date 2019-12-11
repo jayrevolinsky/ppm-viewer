@@ -12,7 +12,7 @@ class PpmWindow : public Fl_Double_Window
 {
 private:
 	Fl_Menu_Bar* _menu = nullptr;
-	Fl_Menu_Item _top_bar[14] = {
+	Fl_Menu_Item _top_bar[20] = {
 		{"&File", 0, 0, 0, FL_SUBMENU},
 		{"Open", FL_CTRL + 'o', openFileCallback, this},
 		{"Quit",	FL_CTRL + FL_F + 4, quitCallback, 0},
@@ -26,6 +26,12 @@ private:
 		{"Negate Blue", 0, applyEffect, (void*)ImageEffectType::NegateBlue},
 		{"Grayscale", 0, applyEffect, (void*)ImageEffectType::Grayscale},
 		{"Noise", 0, applyEffect, (void*)ImageEffectType::Noise},
+		{"High Contrast", 0, applyEffect, (void*)ImageEffectType::HighContrast},
+		{"Flip Horizontal", 0, applyEffect, (void*)ImageEffectType::FlipHorizontal},
+		{"Flip Vertical", 0, applyEffect, (void*)ImageEffectType::FlipVertical},
+		{"Blur", 0, applyEffect, (void*)ImageEffectType::Blur},
+		{"Pixelate", 0, applyEffect, (void*)ImageEffectType::Pixelate},
+		{"Rotate 90", 0, applyEffect, (void*)ImageEffectType::Rotate},
 		{0} //end of Effects dropdown
 	};
 	Fl_RGB_Image* _image = nullptr;

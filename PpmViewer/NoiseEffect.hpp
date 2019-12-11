@@ -1,6 +1,7 @@
 #pragma once
 #include "PpmDocument.hpp"
 #include "ImageEffect.hpp"
+
 class NoiseEffect : public ImageEffect
 {
 public:
@@ -12,8 +13,12 @@ public:
 			for (int j = 0; j < doc.getWidth(); j++)
 			{
 				Pixel& p = doc[i][j];
-				int random = (rand() % 16);
-				int randnumber = random - 8;
+				//'noise' in a photo is random, like static on a TV set.
+				int random = (rand() % 16); 
+				//Limit the value of the random number to prevent vector erros
+				int randnumber = random - 8; 
+				//Go through each pixel
+				//Taking advantage of class functions
 				if ((p.red + randnumber) >= 255)
 				{
 					p.red = 255;
@@ -52,7 +57,6 @@ public:
 				{
 					p.blue = p.blue + randnumber;
 				}
-				//not necessary as we're using references but it makes our intent more clear
 				doc[i][j] = p;
 			}
 		}

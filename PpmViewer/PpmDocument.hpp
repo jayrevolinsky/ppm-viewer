@@ -165,6 +165,28 @@ public:
 		return _format;
 	}
 
+	void setHeight(int height) 
+	{
+		_height = height;
+	}
+
+	void setWidth(int width)
+	{
+		_width = width;
+	}
+
+	void shiftY(int resize_y)
+	{
+		_rgb_data.resize(resize_y);
+	}
+
+	void shiftX(int resize_x)
+	{
+		for (int i = 0; i < _height; i++)
+		{
+			_rgb_data[i].resize(resize_x);
+		}
+	}
 	void setImageFormat(string format)
 	{
 		//error checking
