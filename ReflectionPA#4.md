@@ -4,9 +4,7 @@
 
 ***1. Use the stronger design of the PPM viewer to my advantage***
 
-***~~~2. Implement functions efficiently and effectively~~~***
-
-***2. Try to learn what is going wrong with a function.***
+***2. Try to learn what is going wrong with a function and how to fix it.***
 
 This project felt like the catalyst that I needed to open my eyes to code that is designed for future implementation. When we first learned
 about classes, I thought I understood what they were meant for but I did not truly understand until I saw how effective implementing them
