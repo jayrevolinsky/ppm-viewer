@@ -7,6 +7,7 @@ class FlipVerticalEffect : public ImageEffect
 public:
 	virtual void applyEffect(PpmDocument& doc)
 	{
+		//Heres the link on how to flip an image: https://stackoverflow.com/questions/2647376/correct-flip-mirror-of-pixels-of-an-image
 		int x = 0;
 		int y = 0;
 		int counter = 0;

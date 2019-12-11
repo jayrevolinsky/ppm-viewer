@@ -7,6 +7,9 @@ class BlurEffect : public ImageEffect
 public:
 	virtual void applyEffect(PpmDocument& doc)
 	{
+		//Heres the link that was helpful for blurring an image in c++: https://stackoverflow.com/questions/42363726/bluring-an-image-in-c-c
+		//This one below was helpful too:
+		// https://stackoverflow.com/questions/1696113/how-do-i-gaussian-blur-an-image-without-using-any-in-built-gaussian-functions?noredirect=1&lq=1
 		int gray = 0;
 		for (int i = 0; i < doc.getHeight(); i++)
 		{

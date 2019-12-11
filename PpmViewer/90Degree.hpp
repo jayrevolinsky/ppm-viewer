@@ -7,6 +7,7 @@ class RotateEffect : public ImageEffect
 public:
 	virtual void applyEffect(PpmDocument& doc)
 	{
+		//Heres the link that helped me understand how to rotate an image: https://stackoverflow.com/questions/299267/image-scaling-and-rotating-in-c-c
 		//The classic two dimensional vector
 		//That way the image can be transposed
 		vector<vector<Pixel>> change{};

@@ -7,6 +7,8 @@ class PixelateEffect : public ImageEffect
 public:
 	virtual void applyEffect(PpmDocument& doc)
 	{
+		//The link below was helpful for learning how to pixelate an image:
+		//https://www.howtobuildsoftware.com/index.php/how-do/b9bP/c-arrays-image-image-processing-how-can-i-pixelate-a-1d-array
 		for (int i = 0; i < doc.getHeight(); i += 3)
 		{
 			for (int j = 0; j < doc.getWidth(); j +=3 )
