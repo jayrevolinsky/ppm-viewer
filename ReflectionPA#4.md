@@ -1,7 +1,11 @@
 # Reflection - Milestone #4
+
 **_Goals for this milestone (in order of importance)_**
+
 ***1. Use the stronger design of the PPM viewer to my advantage***
+
 ***~~~2. Implement functions efficiently and effectively~~~***
+
 ***2. Try to learn what is going wrong with a function.***
 
 This project felt like the catalyst that I needed to open my eyes to code that is designed for future implementation. When we first learned
